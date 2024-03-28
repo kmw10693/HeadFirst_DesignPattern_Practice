@@ -1,14 +1,31 @@
-public class NYStylePizzaStore extends PizzaStore{
+public class NYStylePizzaStore extends PizzaStore {
+
+
     @Override
-    Pizza createPizza(String type) {
-        if (type.equals("cheese")) {
-            pizza = new NYStyleCheesePizza();
-        } else if (type.equals("pepperoni")) {
-            //pizza = new NYStylePepperoniPizza();
-        } else if (type.equals("clam")) {
-           // pizza = new NYStyleClamPizza();
-        } else if (type.equals("veggie")) {
-           // pizza = new NYStyleVeggiePizza();
+    protected Pizza createPizza(String item) {
+        Pizza pizza = null;
+        PizzaIngredientFactory pizzaIngredientFactory = new NyPizzaIngredientFactory();
+
+        if (item.equals("cheese")) {
+
+            pizza = new CheesePizza(pizzaIngredientFactory);
+            pizza.setName("NY STYLE CHEESE PIZZA");
+
+        } else if (item.equals("veggie")) {
+
+            pizza = new VeggiePizza(pizzaIngredientFactory);
+            pizza.setName("NY STYLE VEGGIE PIZZA");
+
+        } else if (item.equals("clam")) {
+
+            pizza = new ClamPizza(pizzaIngredientFactory);
+            pizza.setName("NY STYLE CLAM PIZZA");
+
+        } else if (item.equals("pepperoni")) {
+
+            pizza = new PepperoniPizza(pizzaIngredientFactory);
+            pizza.setName("NY STYLE PEPPERONI PIZZA");
+
         }
         return pizza;
     }

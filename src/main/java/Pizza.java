@@ -4,14 +4,14 @@ import java.util.List;
 public abstract class Pizza {
 
     String name;
-    String dough;
-    String sauce;
+    Dough dough;
+    Sauce sauce;
+    Cheese cheese;
+    Pepperoni pepperoni;
+    Clams clams;
+
     List<String> toppings = new ArrayList<>();
-    public void prepare() {
-        for (String topping : toppings) {
-            System.out.println(" " + topping);
-        }
-    }
+    abstract void prepare();
 
     public void bake() {
         System.out.println("bake for 25 minutes in 175C");
@@ -24,6 +24,8 @@ public abstract class Pizza {
     public void box() {
         System.out.println("put into box");
     }
+
+    public void setName(String name) { this.name = name; }
     public String getName() {
         return name;
     }
