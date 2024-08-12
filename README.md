@@ -1,6 +1,8 @@
 # HeadFirst_DesignPattern_Practice
 
-### 디자인 패턴 정리
+[헤드 퍼스트 디자인 패턴](https://m.yes24.com/Goods/Detail/108192370)을 읽고 정리한 레포지토리입니다.
+
+---
 
  [[전략 패턴(Strategy Pattern)]](https://github.com/kmw10693/HeadFirst_DesignPattern_Practice/tree/main/description/Strategy.md) 
  
