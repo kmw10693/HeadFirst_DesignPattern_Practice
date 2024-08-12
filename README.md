@@ -1,43 +1,25 @@
-1. **전략 패턴(Strategy Pattern)** 은 알고리즘군을 정의하고, 캡슐화해서 각각의 알고리즘군을 수정해서 쓸 수 있게 해 줍니다. 전략 패턴을 사용하면 클라이언트로부터 알고리즘을 분리해서 독립적으로 변경할 수 있습니다.
-2. **옵저버 패턴(Observer Pattern)** 은 한 객체의 상태가 바뀌면 그 객체에 의존하는 다른 객체에게 연락이 가고 자동으로 내용이 갱신되는 방식으로 일대다(one-to-many) 의존성을 정의합니다.
-3. **데코레이터 패턴(Decorator Pattern)** 은 객체에 추가 요소를 동적으로 더 할 수 있습니다. 데코레이터를 사용하면 서브클래스를 만들 때보다 훨씬 유연하게 기능을 확장할 수 있습니다.
-4. **팩토리 메소드 패턴(Factory Method Pattern)** 에서는 객체를 생성할 때 필요한 인터페이스를 만듭니다. 어떤 클래스의 인스턴스를 만들지는 서브클래스에서 결정합니다. 팩토리 메소드 패턴을 사용하면 클래스 인스턴스 만드는 일을 서브클래스에게 맡기게 됩니다.
-5. **추상 팩토리 패턴(Abstract Factory Pattern)** 은 구상 클래스에 의존하지 않고도 서로 연관되거나 의존적인 객체로 이루어진 제품군을 생성하는 인터페이스를 제공합니다. 구상 클래스는 서브클래스에서 만듭니다.
-6. **커맨드 패턴(Command Pattern)** 은 요청 내역을 객체로 캡슐화해서 객체를 서로 다른 요청 내역에 따라 매개변수화할 수 있습니다. 이러면 요청을 큐에 저장하거나 로그로 기록하거나 작업 취소 기능을 사용할 수 있습니다.
-7. **어댑터 패턴(Adapter Pattern)** 은 특정 클래스 인터페이스를 클라이언트에게 요구하는 다른 인터페이스로 변환합니다. 인터페이스가 호환되지 않아 같이 쓸 수 없었던 클래스를 사용할 수 있게 도와줍니다.
-8. **퍼사드 패턴(Facade Pattern)** 은 서브시스템에 있는 일련의 인터페이스를 통합 인터페이스로 묶어 줍니다. 또한 고수준 인터페이스도 정의하므로 서브시스템을 더 편리하게 사용할 수 있습니다.
+# HeadFirst_DesignPattern_Practice
 
----
+### 디자인 패턴 정리
+----
+### [[전략 패턴(Strategy Pattern)]](https://github.com/kmw10693/HeadFirst_DesignPattern_Practice/tree/main/description/Strategy.md) 
+ 
+ ### [[옵저버 패턴(Observer Pattern)]](https://github.com/kmw10693/HeadFirst_DesignPattern_Practice/tree/main/description/Observer.md) 
 
-## [옵저버 패턴]
+ ### [[데코레이터 패턴(Decorator Pattern)]](https://github.com/kmw10693/HeadFirst_DesignPattern_Practice/tree/main/description/Decorator.md) 
 
-- 주제는 옵저버들이 Observer 인터페이스를 구현한다는 것을 제외하면 옵저버에 대해 전혀 모른다. (느슨한 결합)
-- 옵저버 패턴은 옵저버가 데이터를 가져오는(풀 방식)을 활용하자.
-- 출판-구독 패턴과 친척이다.
+ ### [[팩토리 메소드 패턴(Factory Method Pattern)]](https://github.com/kmw10693/HeadFirst_DesignPattern_Practice/tree/main/description/Factory_Method.md) 
 
-**[객체지향 원칙]**
+### [[추상 팩토리 패턴(Abstract Factory Pattern]](https://github.com/kmw10693/HeadFirst_DesignPattern_Practice/tree/main/description/Abstract_Factory.md) 
 
-- 바뀌는 부분은 캡슐화한다.
-- 상속보다는 구성을 활용한다.
-- 구현보다는 인터페이스에 맞춰서 프로그래밍한다.
-- 상호작용하는 객체 사이에서는 가능하면 느슨한 결합을 사용해야 한다.
+ ### [[커맨드 패턴(Command Pattern)]](https://github.com/kmw10693/HeadFirst_DesignPattern_Practice/tree/main/description/Command.md) 
 
----
+  ### [[어댑터 패턴(Adapter Pattern)]](https://github.com/kmw10693/HeadFirst_DesignPattern_Practice/tree/main/description/Adapter.md) 
 
-## [데코레이터 패턴]
+  ### [[퍼사드 패턴(Facade Pattern)]](https://github.com/kmw10693/HeadFirst_DesignPattern_Practice/tree/main/description/Facade.md)
+  
+### [[템플릿 메소드 패턴(Template Method Pattern)]](https://github.com/kmw10693/HeadFirst_DesignPattern_Practice/tree/main/description/Template_Method.md)
 
-- 데코레이터의 슈퍼클래스는 자신이 장식하고 있는 객체의 슈퍼클래스와 같다.
-- 한 객체를 여러 개의 데코레이터로 감쌀 수 있다.
-- 데코레이터는 자신이 감싸고 있는 객체와 같은 슈퍼클래스를 가지고 있기에 원래 객체가 들어 갈 자리에 데코레이터 객체를 넣어도 상관없다.
-- 데코레이터는 자신이 장식하고 있는 객체에게 어떤 행동을 위임하는 일 말고도 추가 작업을 수행할 수 있다.
-- 객체는 언제든지 감쌀 수 있으므로, 실행 중에 필요한 데코레이터를 마음대로 적용할 수 있습니다.
-- 특정 형식에 의존하는 클라이언트 코드는 데코레이터 패턴을 적용하면 안된다.
+### [[반복자 패턴(Iterator Pattern)]](https://github.com/kmw10693/HeadFirst_DesignPattern_Practice/tree/main/description/Iterator.md)
 
----
-
-## [팩토리 메소드 패턴]
-- 생산자 클래스가 실제 생산될 제품을 전혀 모르는 상태로 만들어진다.
-- 사용하는 서브클래스에 따라 생산되는 객체 인스턴스가 결정된다. 
-- 구상 생산자 클래스가 하나밖에 없더라도 팩토리 메소드 패턴은 충분히 유용하다. 제품을 생산하는 부분과 사용하는 부분을 분리 가능하다.
-- 팩토리 메소드 패턴을 사용하면 여러 번 재사용이 가능한 프레임워크를 만들 수 있다.
-- 팩토리를 쓸때 장점은 객체 생성 코드를 전부 한 객체 또는 메서드에 넣으면 코드에 중복되는 내용을 제거 가능할 수 있고, 인터페이스를 바탕으로 프로그래밍 가능하다.
+### [[컴포지트 패턴(Composite Pattern)]](https://github.com/kmw10693/HeadFirst_DesignPattern_Practice/tree/main/description/Composite.md)
