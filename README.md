@@ -27,3 +27,5 @@
 [[컴포지트 패턴(Composite Pattern)]](https://github.com/kmw10693/HeadFirst_DesignPattern_Practice/tree/main/description/Composite.md)
 
 [[상태 패턴(State Pattern)]](https://github.com/kmw10693/HeadFirst_DesignPattern_Practice/tree/main/description/State.md)
+
+[[프록시 패턴(Proxy Pattern)](https://github.com/kmw10693/HeadFirst_DesignPattern_Practice/tree/main/description/Proxy.md)
